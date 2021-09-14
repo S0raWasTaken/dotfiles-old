@@ -1,0 +1,8 @@
+alias la='ls -A'
+alias nano=micro
+alias rm='trash -v'
+alias df='duf'
+alias free='free -h'
+alias neofetch='neofetch --ascii_distro arch'
+alias telnet='telnet -e p'
+alias config_edit='micro ~/.config/i3/config'
