@@ -7,3 +7,4 @@ alias neofetch='neofetch --ascii_distro arch'
 alias telnet='telnet -e p'
 alias config_edit='micro ~/.config/i3/config'
 alias sl='sl | lolcat'
+alias vim=nvim
