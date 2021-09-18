@@ -1,4 +1,6 @@
 alias la='ls -A'
+alias lla='ls -lA'
+alias ll='ls -l'
 alias nano=micro
 alias rm='trash -v'
 alias df='duf'
@@ -8,3 +10,4 @@ alias telnet='telnet -e p'
 alias config_edit='micro ~/.config/i3/config'
 alias sl='sl | lolcat'
 alias vim=nvim
+alias proton='/home/s0ra/.steam/steam/steamapps/common/Proton\ -\ Experimental/files/bin/wine'
