@@ -1,3 +1,5 @@
+#!/bin/bash
+
 alias la='ls -A'
 alias lla='ls -lA'
 alias ll='ls -l'
@@ -5,9 +7,16 @@ alias nano=micro
 alias rm='trash -v'
 alias df='duf'
 alias free='free -h'
-alias neofetch='neofetch --ascii_distro arch'
+#alias neofetch='neofetch --ascii_distro sparky'
 alias telnet='telnet -e p'
 alias config_edit='micro ~/.config/i3/config'
 alias sl='sl | lolcat'
 alias vim=nvim
 alias proton='/home/s0ra/.steam/steam/steamapps/common/Proton\ -\ Experimental/files/bin/wine'
+alias sudo='sudo -p "A senha, fi de rapariga: "'
+alias fm='nemo .'
+
+mkcd() {
+	mkdir $1
+	cd $1
+}
