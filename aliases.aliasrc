@@ -15,8 +15,23 @@ alias vim=nvim
 alias proton='/home/s0ra/.steam/steam/steamapps/common/Proton\ -\ Experimental/files/bin/wine'
 alias sudo='sudo -p "A senha, fi de rapariga: "'
 alias fm='nemo .'
+alias yay=paru
+alias pacman="pacman --color=auto"
+alias paru='paru --color=auto'
+# bcs darkos logo is so cool
+alias neofetch='neofetch --ascii_distro archlinux'
+alias uname=unamec
+alias make="make -j8"
+alias rickroll="curl -s -L https://raw.githubusercontent.com/keroserene/rickrollrc/master/roll.sh | bash"
+
+alias micro="echo NEOVIM, seu jumento"
 
 mkcd() {
 	mkdir $1
 	cd $1
+}
+
+change_theme() {
+	ZSH_THEME=$1
+	source $ZSH/oh-my-zsh.sh
 }
