@@ -24,9 +24,10 @@ alias neofetch='neofetch --ascii /home/s0ra/neofetchAsciiArt/neoCat.txt --ascii_
 alias uname=unamec
 alias make="make -j8"
 alias rickroll="curl -s -L https://raw.githubusercontent.com/keroserene/rickrollrc/master/roll.sh | bash"
-
-alias micro="echo NEOVIM, seu jumento"
-
+alias pipes=pipes.sh
+#alias micro="echo NEOVIM, seu jumento"
+alias ip='ip --color=auto'
+alias ifconfig='ip a'
 alias reflector-br="curl -Ss https://archlinux.org/mirrorlist/?country=BR&protocol=http&protocol=https&ip_version=4&ip_version=6&use_mirror_status=on"
 
 
