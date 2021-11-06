@@ -19,12 +19,71 @@ alias yay=paru
 alias pacman="pacman --color=auto"
 alias paru='paru --color=auto'
 # bcs darkos logo is so cool
-alias neofetch='neofetch --ascii_distro archlinux'
+alias neomegu='neofetch --ascii /home/s0ra/neofetchAsciiArt/neoMegu.txt --ascii_colors 1 2 101 4 15 6'
+alias neofetch='neofetch --ascii /home/s0ra/neofetchAsciiArt/neoCat.txt --ascii_colors 1 15 3 0'
 alias uname=unamec
 alias make="make -j8"
 alias rickroll="curl -s -L https://raw.githubusercontent.com/keroserene/rickrollrc/master/roll.sh | bash"
 
 alias micro="echo NEOVIM, seu jumento"
+
+alias reflector-br="curl -Ss https://archlinux.org/mirrorlist/?country=BR&protocol=http&protocol=https&ip_version=4&ip_version=6&use_mirror_status=on"
+
+
+# UUTILS aliases
+alias cat=uu-cat
+alias arch=uu-arch
+alias cp=uu-cp
+alias cut=uu-cut
+alias chroot=uu-chroot
+alias whoami=uu-whoami
+alias kill=uu-kill
+alias ln=uu-ln
+#alias ls=uu-ls
+alias mkdir=uu-mkdir
+alias mv=uu-mv
+alias pwd=uu-pwd
+alias readlink=uu-readlink
+alias realpath=uu-realpath
+alias rmdir=uu-rmtdir
+alias test=uu-test
+alias touch=uu-touch
+alias yes=uu-yes
+alias more=uu-more
+alias hostname=uu-hostname
+alias id=uu-id
+alias groups=uu-groups
+alias cksum=uu-cksum
+alias date=uu-date
+alias dircolors=uu-dircolors
+alias chmod=uu-chmod
+alias chown=uu-chown
+alias chgrp=uu-chgrp
+alias base64=uu-base64
+alias base32=uu-base32
+alias truncate=uu-truncate
+alias true=uu-true
+alias uptime=uu-uptime
+alias users=uu-users
+alias wc=uu-wc
+alias who=uu-who
+alias sync=uu-sync
+alias tac=uu-tac
+alias stdbuf=uu-stdbuf
+alias sleep=uu-sleep
+alias sort=uu-sort
+alias seq=uu-seq
+alias paste=uu-paste
+alias nice=uu-nice
+alias pinky=uu-pinky
+alias du=uu-du
+alias printf=uu-printf
+alias tac=uu-tac
+alias tail=uu-tail
+alias tee=uu-tee
+alias printenv=uu-printenv
+alias pr=uu-pr
+alias pinky=uu-pinky
 
 mkcd() {
 	mkdir $1
