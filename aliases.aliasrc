@@ -29,6 +29,7 @@ alias pipes=pipes.sh
 alias ip='ip --color=auto'
 alias ifconfig='ip a'
 alias reflector-br="curl -Ss https://archlinux.org/mirrorlist/?country=BR&protocol=http&protocol=https&ip_version=4&ip_version=6&use_mirror_status=on"
+alias emacs="emacsclient"
 
 
 # UUTILS aliases
