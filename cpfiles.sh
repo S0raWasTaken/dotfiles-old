@@ -8,3 +8,4 @@ cp $HOME/.config/alacritty/alacritty.yml .
 cp $HOME/.spacemacs .
 cp $HOME/.config/sxhkd/sxhkdrc .
 cp $HOME/.config/bspwm/bspwmrc .
+cp $HOME/.config/kitty/kitty.conf .
