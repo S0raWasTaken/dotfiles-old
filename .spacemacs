@@ -270,10 +270,16 @@ It should only modify the values of Spacemacs settings."
    ;; Default font or prioritized list of fonts. The `:size' can be specified as
    ;; a non-negative integer (pixel size), or a floating-point (point size).
    ;; Point size is recommended, because it's device independent. (default 10.0)
-   dotspacemacs-default-font '("Fira Code"
-                               :size 10.0
-                               :weight normal
-                               :width normal)
+   dotspacemacs-default-font '(("FiraCode Nerd Font Mono"
+                                :size 11
+                                :weight medium
+                                :width normal
+                                :powerline-scale 1.1)
+                               ("Fira Code Symbol"
+                                :size 16
+                                :weight normal
+                                :width normal
+                                :powerline-scale 1.1))
 
    ;; The leader key (default "SPC")
    dotspacemacs-leader-key "SPC"
@@ -566,14 +572,10 @@ This function is called only while dumping Spacemacs configuration. You can
 dump.")
 
 
-(defun dotspacemacs/user-config ()
-  "Configuration for user code:
-This function is called at the very end of Spacemacs startup, after layer
-configuration.
-Put your configuration code here, except for variables that should be set
-before packages are loaded."
-  
-  )
+(defun dotspacemacs/user-config()
+ "Configuration function for user code."
+
+)
 
 
 ;; Do not write anything past this comment. This is where Emacs will
@@ -591,7 +593,9 @@ This function is called at the very end of Spacemacs initialization."
  '(custom-safe-themes
    '("9b54ba84f245a59af31f90bc78ed1240fca2f5a93f667ed54bbf6c6d71f664ac" "7eea50883f10e5c6ad6f81e153c640b3a288cd8dc1d26e4696f7d40f754cc703" "0466adb5554ea3055d0353d363832446cd8be7b799c39839f387abb631ea0995" "c5ded9320a346146bbc2ead692f0c63be512747963257f18cc8518c5254b7bf5" "8146edab0de2007a99a2361041015331af706e7907de9d6a330a3493a541e5a6" "b0e446b48d03c5053af28908168262c3e5335dcad3317215d9fdeb8bac5bacf9" "1d5e33500bc9548f800f9e248b57d1b2a9ecde79cb40c0b1398dec51ee820daf" "7a7b1d475b42c1a0b61f3b1d1225dd249ffa1abb1b7f726aec59ac7ca3bf4dae" "028c226411a386abc7f7a0fba1a2ebfae5fe69e2a816f54898df41a6a3412bb5" "a9a67b318b7417adbedaab02f05fa679973e9718d9d26075c6235b1f0db703c8" "da186cce19b5aed3f6a2316845583dbee76aea9255ea0da857d1c058ff003546" default))
  '(elcord-mode t nil (elcord))
- '(evil-want-Y-yank-to-eol nil))
+ '(evil-want-Y-yank-to-eol nil)
+ '(package-selected-packages
+   '(undo-tree lsp-ui lsp-python-ms lsp-pyright lsp-origami lsp-java helm-lsp dap-mode lsp-treemacs bui spinner paradox origami lsp-mode zen-mode yasnippet-snippets yapfify yaml-mode ws-butler writeroom-mode winum which-key web-mode web-beautify volatile-highlights vi-tilde-fringe uuidgen use-package treemacs-projectile treemacs-persp treemacs-icons-dired treemacs-evil toml-mode toc-org tagedit systemd symon symbol-overlay string-inflection string-edit spotify sphinx-doc spaceline-all-the-icons slim-mode scss-mode sass-mode ron-mode restart-emacs request rainbow-delimiters racer quickrun pytest pyenv-mode pydoc py-isort pug-mode prettier-js popwin poetry pippel pipenv pip-requirements pcre2el password-generator overseer org-superstar open-junk-file npm-mode nose nodejs-repl nginx-mode nameless mvn multi-line mmm-mode maven-test-mode markdown-toc macrostep lorem-ipsum livid-mode live-py-mode link-hint json-reformat json-navigator json-mode js2-refactor js-doc jinja2-mode inspector info+ indent-guide importmagic impatient-mode hybrid-mode hungry-delete hl-todo highlight-parentheses highlight-numbers highlight-indentation helm-xref helm-themes helm-swoop helm-spotify-plus helm-pydoc helm-purpose helm-projectile helm-org helm-mode-manager helm-make helm-ls-git helm-flx helm-descbinds helm-css-scss helm-company helm-c-yasnippet helm-ag groovy-mode groovy-imports google-translate golden-ratio git-gutter-fringe gh-md fuzzy font-lock+ flycheck-rust flycheck-pos-tip flycheck-package flycheck-elsa flx-ido fancy-battery eyebrowse expand-region evil-visualstar evil-visual-mark-mode evil-unimpaired evil-tutor evil-textobj-line evil-surround evil-numbers evil-nerd-commenter evil-matchit evil-lisp-state evil-lion evil-indent-plus evil-iedit-state evil-goggles evil-exchange evil-escape evil-ediff evil-easymotion evil-collection evil-cleverparens evil-args evil-anzu eval-sexp-fu emr emmet-mode elisp-slime-nav elcord editorconfig dumb-jump drag-stuff dotenv-mode doom-themes dired-quick-sort diminish define-word cython-mode company-web company-statistics company-ansible company-anaconda column-enforce-mode clean-aindent-mode centered-cursor-mode cargo browse-at-remote blacken auto-yasnippet auto-highlight-symbol auto-compile ansible-doc ansible aggressive-indent ace-link ace-jump-helm-line ac-ispell)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.

@@ -1,5 +1,8 @@
 #!/bin/bash
-
+alias icat='kitty +kitten icat'
+alias ranger='TERM=xterm-kitty ranger'
+alias clear='tput reset'
+alias fuck='killall -s SIGKILL'
 alias la='ls -A'
 alias lla='ls -lA'
 alias ll='ls -l'
@@ -19,8 +22,9 @@ alias yay=paru
 alias pacman="pacman --color=auto"
 alias paru='paru --color=auto'
 # bcs darkos logo is so cool
-alias neomegu='neofetch --ascii /home/s0ra/neofetchAsciiArt/neoMegu.txt --ascii_colors 1 2 101 4 15 6'
-alias neofetch='neofetch --ascii /home/s0ra/neofetchAsciiArt/neoCat.txt --ascii_colors 1 15 3 0'
+#alias neomegu='neofetch --ascii /home/s0ra/neofetchAsciiArt/neoMegu.txt --ascii_colors 1 2 101 4 15 6'
+#alias neofetch='neofetch --ascii /home/s0ra/neofetchAsciiArt/neoCat.txt --ascii_colors 1 15 3 0'
+alias neofetch='neofetch --ascii_distro debian --kitty $HOME/Pictures/megu-scared-to-ascii.png'
 alias uname=unamec
 alias make="make -j8"
 alias rickroll="curl -s -L https://raw.githubusercontent.com/keroserene/rickrollrc/master/roll.sh | bash"
@@ -95,4 +99,8 @@ mkcd() {
 change_theme() {
 	ZSH_THEME=$1
 	source $ZSH/oh-my-zsh.sh
+}
+
+rust_test() {
+	echo $1 | rustc - && ./rust_out && \rm ./rust_out
 }

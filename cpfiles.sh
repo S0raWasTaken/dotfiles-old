@@ -6,3 +6,5 @@ cp $HOME/.aliasrc ./aliases.aliasrc
 cp $HOME/.config/picom/picom.conf .
 cp $HOME/.config/alacritty/alacritty.yml .
 cp $HOME/.spacemacs .
+cp $HOME/.config/sxhkd/sxhkdrc .
+cp $HOME/.config/bspwm/bspwmrc .
